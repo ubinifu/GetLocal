@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#FEF3C7"/>
+  <!-- Top roll -->
+  <ellipse cx="200" cy="125" rx="120" ry="55" fill="#D97706"/>
+  <ellipse cx="200" cy="120" rx="118" ry="52" fill="#F59E0B"/>
+  <ellipse cx="200" cy="118" rx="100" ry="40" fill="#FBBF24"/>
+  <!-- Sesame seeds -->
+  <ellipse cx="170" cy="108" rx="5" ry="3" fill="#FDE68A" transform="rotate(-20 170 108)"/>
+  <ellipse cx="200" cy="103" rx="5" ry="3" fill="#FDE68A" transform="rotate(10 200 103)"/>
+  <ellipse cx="230" cy="108" rx="5" ry="3" fill="#FDE68A" transform="rotate(-15 230 108)"/>
+  <!-- Sausage patty -->
+  <ellipse cx="200" cy="148" rx="70" ry="20" fill="#7C2D12"/>
+  <ellipse cx="200" cy="145" rx="68" ry="18" fill="#9A3412"/>
+  <!-- Egg -->
+  <ellipse cx="195" cy="135" rx="30" ry="18" fill="white" opacity="0.9"/>
+  <circle cx="195" cy="133" r="10" fill="#FCD34D"/>
+  <!-- Cheese drip -->
+  <rect x="150" y="150" width="100" height="8" rx="3" fill="#F59E0B" opacity="0.8"/>
+  <path d="M160 158 L155 170" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <path d="M230 158 L235 168" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <!-- Bottom roll -->
+  <ellipse cx="200" cy="170" rx="120" ry="55" fill="#D97706"/>
+  <ellipse cx="200" cy="167" rx="118" ry="50" fill="#F59E0B"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="20" fill="#92400E" font-weight="700" text-anchor="middle">Sausage, Egg &amp; Cheese</text>
+</svg>

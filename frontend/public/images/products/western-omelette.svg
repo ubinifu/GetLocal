@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#FFFBEB"/>
+  <ellipse cx="200" cy="170" rx="150" ry="80" fill="#E5E7EB"/>
+  <ellipse cx="200" cy="165" rx="140" ry="75" fill="#F9FAFB"/>
+  <!-- Omelette fold -->
+  <path d="M90 160 Q200 80 310 160 Q200 200 90 160Z" fill="#FBBF24"/>
+  <path d="M95 158 Q200 85 305 158" fill="#FDE68A"/>
+  <!-- Ham cubes -->
+  <rect x="150" y="135" width="14" height="12" rx="2" fill="#FB7185"/>
+  <rect x="185" y="128" width="14" height="12" rx="2" fill="#FDA4AF"/>
+  <rect x="220" y="133" width="14" height="12" rx="2" fill="#FB7185"/>
+  <!-- Peppers -->
+  <rect x="168" y="140" width="12" height="5" rx="1" fill="#22C55E" transform="rotate(15 174 142)"/>
+  <rect x="205" y="138" width="12" height="5" rx="1" fill="#EF4444" transform="rotate(-10 211 140)"/>
+  <rect x="238" y="142" width="12" height="5" rx="1" fill="#22C55E" transform="rotate(8 244 144)"/>
+  <!-- Onion -->
+  <path d="M175 148 Q180 142 186 148" stroke="white" stroke-width="3" fill="none" opacity="0.8"/>
+  <path d="M215 146 Q220 140 226 146" stroke="white" stroke-width="3" fill="none" opacity="0.8"/>
+  <!-- Hash browns on side -->
+  <ellipse cx="100" cy="185" rx="35" ry="20" fill="#D97706"/>
+  <ellipse cx="100" cy="183" rx="33" ry="18" fill="#F59E0B"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="20" fill="#92400E" font-weight="700" text-anchor="middle">Western Omelette</text>
+</svg>

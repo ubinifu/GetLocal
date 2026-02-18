@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#ECFDF5"/>
+  <!-- Bowl -->
+  <ellipse cx="200" cy="185" rx="140" ry="55" fill="#D1D5DB"/>
+  <ellipse cx="200" cy="180" rx="135" ry="50" fill="#E5E7EB"/>
+  <ellipse cx="200" cy="175" rx="130" ry="48" fill="#F3F4F6"/>
+  <!-- Mixed greens base -->
+  <ellipse cx="200" cy="155" rx="115" ry="45" fill="#86EFAC"/>
+  <ellipse cx="200" cy="152" rx="110" ry="40" fill="#4ADE80"/>
+  <!-- Chicken salad mound -->
+  <ellipse cx="200" cy="140" rx="60" ry="30" fill="#FDE68A"/>
+  <ellipse cx="200" cy="138" rx="58" ry="28" fill="#FEF3C7"/>
+  <!-- Texture on chicken salad -->
+  <circle cx="180" cy="135" r="4" fill="#FDE68A" opacity="0.6"/>
+  <circle cx="200" cy="130" r="4" fill="#FDE68A" opacity="0.6"/>
+  <circle cx="218" cy="135" r="4" fill="#FDE68A" opacity="0.6"/>
+  <circle cx="190" cy="145" r="3" fill="#FDE68A" opacity="0.6"/>
+  <circle cx="210" cy="143" r="3" fill="#FDE68A" opacity="0.6"/>
+  <!-- Tomato wedges -->
+  <path d="M120 155 L135 142 L140 158Z" fill="#EF4444" opacity="0.8"/>
+  <path d="M270 152 L280 138 L288 155Z" fill="#EF4444" opacity="0.8"/>
+  <!-- Cucumber slices -->
+  <circle cx="145" cy="160" r="10" fill="#86EFAC" stroke="#22C55E" stroke-width="1.5"/>
+  <circle cx="145" cy="160" r="5" fill="#DCFCE7"/>
+  <circle cx="260" cy="158" r="10" fill="#86EFAC" stroke="#22C55E" stroke-width="1.5"/>
+  <circle cx="260" cy="158" r="5" fill="#DCFCE7"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="19" fill="#166534" font-weight="700" text-anchor="middle">Homemade Chicken Salad</text>
+</svg>

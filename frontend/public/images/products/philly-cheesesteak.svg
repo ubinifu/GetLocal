@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#FEF3C7"/>
+  <!-- Hoagie roll top -->
+  <path d="M50 145 Q200 75 350 145" fill="#B45309"/>
+  <path d="M55 143 Q200 78 345 143" fill="#D97706"/>
+  <path d="M60 140 Q200 80 340 140" fill="#F59E0B"/>
+  <!-- Steak -->
+  <path d="M80 148 Q200 140 320 148 L310 165 Q200 158 90 165Z" fill="#78350F"/>
+  <path d="M85 150 Q200 142 315 150 L308 162 Q200 156 92 162Z" fill="#92400E"/>
+  <!-- Peppers -->
+  <path d="M120 152 Q128 145 136 152" stroke="#16A34A" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M190 150 Q198 143 206 150" stroke="#16A34A" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M260 152 Q268 145 276 152" stroke="#EF4444" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Onions -->
+  <path d="M150 155 Q158 148 165 155" stroke="#FDE68A" stroke-width="4" fill="none" opacity="0.8"/>
+  <path d="M225 153 Q233 146 240 153" stroke="#FDE68A" stroke-width="4" fill="none" opacity="0.8"/>
+  <!-- Melted cheese -->
+  <path d="M90 158 Q130 165 170 158 Q210 165 250 158 Q290 165 320 158" fill="#F59E0B" opacity="0.7"/>
+  <path d="M100 162 L95 175" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <path d="M200 162 L203 178" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <path d="M300 162 L305 174" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Bottom roll -->
+  <path d="M50 172 Q200 195 350 172" fill="#B45309"/>
+  <path d="M50 170 Q200 190 350 170" fill="#D97706"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="20" fill="#92400E" font-weight="700" text-anchor="middle">Philly Cheese Steak</text>
+</svg>

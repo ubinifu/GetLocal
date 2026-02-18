@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#FFF7ED"/>
+  <!-- Wrap tortilla -->
+  <ellipse cx="200" cy="150" rx="130" ry="75" fill="#FDE68A"/>
+  <ellipse cx="200" cy="148" rx="125" ry="70" fill="#FBBF24"/>
+  <!-- Inner filling visible -->
+  <ellipse cx="200" cy="145" rx="100" ry="55" fill="#FEF3C7"/>
+  <!-- BBQ rib meat -->
+  <rect x="130" y="120" width="35" height="15" rx="4" fill="#7C2D12" transform="rotate(-8 147 127)"/>
+  <rect x="170" y="115" width="35" height="15" rx="4" fill="#92400E" transform="rotate(5 187 122)"/>
+  <rect x="215" y="118" width="35" height="15" rx="4" fill="#78350F" transform="rotate(-3 232 125)"/>
+  <!-- BBQ sauce drizzle -->
+  <path d="M140 135 Q170 128 200 135 Q230 128 260 135" stroke="#9A3412" stroke-width="5" fill="none" opacity="0.7" stroke-linecap="round"/>
+  <!-- Coleslaw -->
+  <path d="M130 148 Q160 140 190 148 Q220 140 250 148 Q270 142 280 148" fill="#BBF7D0" opacity="0.8"/>
+  <path d="M140 152 Q170 146 200 152 Q230 146 260 152" stroke="#FDE68A" stroke-width="2" fill="none"/>
+  <!-- Pickle slices -->
+  <circle cx="160" cy="160" r="10" fill="#22C55E" opacity="0.7"/>
+  <circle cx="160" cy="160" r="5" fill="#4ADE80" opacity="0.5"/>
+  <circle cx="220" cy="158" r="10" fill="#22C55E" opacity="0.7"/>
+  <circle cx="220" cy="158" r="5" fill="#4ADE80" opacity="0.5"/>
+  <!-- Wrapped bottom -->
+  <path d="M90 175 Q200 200 310 175 Q310 185 200 210 Q90 185 90 175Z" fill="#D97706" opacity="0.6"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="20" fill="#92400E" font-weight="700" text-anchor="middle">BBQ Rib Wrap</text>
+</svg>

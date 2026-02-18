@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#F0FDF4"/>
+  <!-- Wrap (cut in half, showing cross section) -->
+  <!-- Left half -->
+  <ellipse cx="160" cy="155" rx="80" ry="65" fill="#FDE68A"/>
+  <ellipse cx="160" cy="155" rx="75" ry="60" fill="#FBBF24"/>
+  <!-- Inner filling -->
+  <ellipse cx="160" cy="155" rx="60" ry="48" fill="#86EFAC"/>
+  <!-- Chicken pieces -->
+  <rect x="130" y="135" width="24" height="12" rx="3" fill="#F5F5DC" transform="rotate(-15 142 141)"/>
+  <rect x="155" y="142" width="22" height="12" rx="3" fill="#FAFAF0" transform="rotate(10 166 148)"/>
+  <rect x="140" y="158" width="20" height="12" rx="3" fill="#F5F5DC" transform="rotate(-8 150 164)"/>
+  <!-- Romaine lettuce -->
+  <path d="M125 150 Q135 138 145 150" fill="#22C55E"/>
+  <path d="M165 145 Q175 133 185 145" fill="#16A34A"/>
+  <!-- Parmesan flecks -->
+  <circle cx="148" cy="148" r="3" fill="#FEF3C7"/>
+  <circle cx="170" cy="160" r="3" fill="#FEF3C7"/>
+  <circle cx="155" cy="170" r="2.5" fill="#FEF3C7"/>
+  <!-- Right half -->
+  <ellipse cx="260" cy="155" rx="80" ry="65" fill="#FDE68A"/>
+  <ellipse cx="260" cy="155" rx="75" ry="60" fill="#FBBF24"/>
+  <ellipse cx="260" cy="155" rx="60" ry="48" fill="#86EFAC"/>
+  <rect x="235" y="138" width="22" height="12" rx="3" fill="#F5F5DC" transform="rotate(12 246 144)"/>
+  <rect x="255" y="148" width="20" height="12" rx="3" fill="#FAFAF0" transform="rotate(-5 265 154)"/>
+  <path d="M240 155 Q250 143 260 155" fill="#22C55E"/>
+  <path d="M268 150 Q278 138 288 150" fill="#16A34A"/>
+  <circle cx="250" cy="162" r="3" fill="#FEF3C7"/>
+  <circle cx="275" cy="155" r="2.5" fill="#FEF3C7"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="19" fill="#166534" font-weight="700" text-anchor="middle">Chicken Caesar Wrap</text>
+</svg>

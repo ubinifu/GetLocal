@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#BFDBFE"/>
+      <stop offset="100%" stop-color="#DBEAFE"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#skyGrad)"/>
+  <!-- Sidewalk -->
+  <rect x="0" y="310" width="800" height="90" fill="#D1D5DB"/>
+  <rect x="0" y="310" width="800" height="5" fill="#9CA3AF"/>
+  <!-- Building -->
+  <rect x="150" y="80" width="500" height="230" fill="#FEF3C7"/>
+  <rect x="150" y="80" width="500" height="230" stroke="#D97706" stroke-width="3" fill="none"/>
+  <!-- Awning -->
+  <path d="M130 120 L670 120 L680 165 L120 165Z" fill="#DC2626"/>
+  <path d="M130 120 L210 120 L220 165 L120 165Z" fill="#B91C1C"/>
+  <path d="M290 120 L370 120 L380 165 L280 165Z" fill="#B91C1C"/>
+  <path d="M450 120 L530 120 L540 165 L440 165Z" fill="#B91C1C"/>
+  <path d="M610 120 L670 120 L680 165 L600 165Z" fill="#B91C1C"/>
+  <!-- Store sign -->
+  <rect x="220" y="85" width="360" height="30" rx="4" fill="#92400E"/>
+  <text x="400" y="107" font-family="Georgia, serif" font-size="22" fill="#FDE68A" font-weight="700" text-anchor="middle">AMBER'S SUB SHOP</text>
+  <!-- Windows -->
+  <rect x="180" y="175" width="160" height="120" rx="4" fill="#BFDBFE" stroke="#92400E" stroke-width="3"/>
+  <line x1="260" y1="175" x2="260" y2="295" stroke="#92400E" stroke-width="2"/>
+  <line x1="180" y1="235" x2="340" y2="235" stroke="#92400E" stroke-width="2"/>
+  <!-- Window text "OPEN" -->
+  <rect x="195" y="195" width="50" height="25" rx="3" fill="#DC2626"/>
+  <text x="220" y="213" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="700" text-anchor="middle">OPEN</text>
+  <!-- Door -->
+  <rect x="370" y="180" width="90" height="130" rx="4" fill="#78350F" stroke="#92400E" stroke-width="3"/>
+  <rect x="380" y="190" width="70" height="50" rx="2" fill="#93C5FD" opacity="0.5"/>
+  <circle cx="445" cy="250" r="6" fill="#F59E0B"/>
+  <!-- Right window -->
+  <rect x="490" y="175" width="140" height="120" rx="4" fill="#BFDBFE" stroke="#92400E" stroke-width="3"/>
+  <line x1="560" y1="175" x2="560" y2="295" stroke="#92400E" stroke-width="2"/>
+  <line x1="490" y1="235" x2="630" y2="235" stroke="#92400E" stroke-width="2"/>
+  <!-- Boar's Head sign in window -->
+  <rect x="500" y="195" width="50" height="30" rx="3" fill="#FDE68A"/>
+  <text x="525" y="215" font-family="Arial, sans-serif" font-size="10" fill="#92400E" font-weight="700" text-anchor="middle">BOAR'S</text>
+  <text x="525" y="223" font-family="Arial, sans-serif" font-size="8" fill="#92400E" font-weight="700" text-anchor="middle">HEAD</text>
+  <!-- Address -->
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="18" fill="#374151" font-weight="600" text-anchor="middle">125 W Main Street, Middletown, NY</text>
+  <text x="400" y="375" font-family="Arial, sans-serif" font-size="14" fill="#6B7280" text-anchor="middle">(845) 342-4814 | Mon-Sat 6am-7pm, Sun 6am-6pm</text>
+</svg>

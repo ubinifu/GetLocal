@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#FDF2F8"/>
+  <!-- Roll top -->
+  <path d="M60 140 Q200 80 340 140" fill="#D97706"/>
+  <path d="M65 138 Q200 82 335 138" fill="#F59E0B"/>
+  <path d="M70 136 Q200 85 330 136" fill="#FBBF24"/>
+  <!-- Lettuce -->
+  <path d="M80 144 Q160 134 240 144 Q300 136 320 144" fill="#4ADE80"/>
+  <!-- Ham slices (pink, folded) -->
+  <ellipse cx="150" cy="152" rx="45" ry="10" fill="#FDA4AF" transform="rotate(-3 150 152)"/>
+  <ellipse cx="210" cy="150" rx="45" ry="10" fill="#FB7185" transform="rotate(2 210 150)"/>
+  <ellipse cx="270" cy="152" rx="40" ry="10" fill="#FDA4AF" transform="rotate(-2 270 152)"/>
+  <!-- Cheese slices -->
+  <rect x="120" y="158" width="60" height="12" rx="2" fill="#FCD34D" transform="rotate(-3 150 164)" opacity="0.9"/>
+  <rect x="200" y="157" width="60" height="12" rx="2" fill="#F59E0B" transform="rotate(2 230 163)" opacity="0.9"/>
+  <!-- Tomato -->
+  <circle cx="170" cy="170" r="11" fill="#EF4444" opacity="0.8"/>
+  <circle cx="230" cy="170" r="11" fill="#EF4444" opacity="0.8"/>
+  <!-- Bottom roll -->
+  <path d="M60 178 Q200 198 340 178" fill="#D97706"/>
+  <path d="M60 175 Q200 193 340 175" fill="#F59E0B"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="18" fill="#92400E" font-weight="700" text-anchor="middle">Boar's Head Ham &amp; Cheese</text>
+</svg>

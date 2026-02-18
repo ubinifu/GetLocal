@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#FEF9C3"/>
+  <!-- Plate -->
+  <ellipse cx="200" cy="170" rx="150" ry="80" fill="#E5E7EB"/>
+  <ellipse cx="200" cy="165" rx="140" ry="75" fill="#F3F4F6"/>
+  <!-- Omelette -->
+  <ellipse cx="200" cy="150" rx="110" ry="55" fill="#FCD34D"/>
+  <ellipse cx="200" cy="145" rx="105" ry="50" fill="#FBBF24"/>
+  <!-- Filling visible -->
+  <path d="M130 145 Q165 120 200 145 Q235 120 270 145" fill="#FDE68A"/>
+  <!-- Steak pieces -->
+  <rect x="155" y="130" width="20" height="8" rx="2" fill="#78350F" transform="rotate(-10 165 134)"/>
+  <rect x="180" y="125" width="18" height="8" rx="2" fill="#92400E" transform="rotate(5 189 129)"/>
+  <rect x="210" y="128" width="22" height="8" rx="2" fill="#78350F" transform="rotate(-5 221 132)"/>
+  <!-- Peppers -->
+  <path d="M170 140 Q175 133 182 138" stroke="#16A34A" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M220 135 Q225 128 232 133" stroke="#DC2626" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Melted cheese -->
+  <path d="M160 142 Q170 150 185 145 Q200 140 215 148 Q230 153 245 145" stroke="#F59E0B" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="20" fill="#92400E" font-weight="700" text-anchor="middle">Cheese Steak Omelette</text>
+</svg>

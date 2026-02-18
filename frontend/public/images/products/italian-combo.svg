@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#FEF2F2"/>
+  <!-- Hero roll top -->
+  <path d="M60 140 Q200 80 340 140" fill="#D97706"/>
+  <path d="M65 138 Q200 82 335 138" fill="#F59E0B"/>
+  <path d="M70 136 Q200 85 330 136" fill="#FBBF24"/>
+  <!-- Fillings -->
+  <!-- Lettuce -->
+  <path d="M80 145 Q120 135 160 145 Q200 135 240 145 Q280 135 320 145" fill="#4ADE80" opacity="0.9"/>
+  <path d="M85 148 Q125 140 165 148 Q205 140 245 148 Q285 140 315 148" fill="#22C55E"/>
+  <!-- Meats layered -->
+  <ellipse cx="140" cy="155" rx="40" ry="8" fill="#FDA4AF" transform="rotate(-5 140 155)"/>
+  <ellipse cx="200" cy="152" rx="40" ry="8" fill="#F87171" transform="rotate(3 200 152)"/>
+  <ellipse cx="260" cy="155" rx="40" ry="8" fill="#FB923C" transform="rotate(-3 260 155)"/>
+  <!-- Provolone -->
+  <path d="M100 160 L120 172 L160 160 L180 172 L220 160 L240 172 L280 160 L300 172" stroke="#FCD34D" stroke-width="5" fill="none" opacity="0.8"/>
+  <!-- Tomato slices -->
+  <circle cx="140" cy="165" r="12" fill="#EF4444" opacity="0.8"/>
+  <circle cx="140" cy="165" r="6" fill="#FCA5A5" opacity="0.6"/>
+  <circle cx="210" cy="165" r="12" fill="#EF4444" opacity="0.8"/>
+  <circle cx="210" cy="165" r="6" fill="#FCA5A5" opacity="0.6"/>
+  <circle cx="275" cy="165" r="12" fill="#EF4444" opacity="0.8"/>
+  <!-- Onion rings -->
+  <circle cx="170" cy="168" r="8" stroke="white" stroke-width="2.5" fill="none" opacity="0.7"/>
+  <circle cx="240" cy="168" r="8" stroke="white" stroke-width="2.5" fill="none" opacity="0.7"/>
+  <!-- Bottom roll -->
+  <path d="M60 175 Q200 195 340 175" fill="#D97706"/>
+  <path d="M60 172 Q200 190 340 172" fill="#F59E0B"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="20" fill="#92400E" font-weight="700" text-anchor="middle">Italian Combo Hero</text>
+</svg>

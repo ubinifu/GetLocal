@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#FFFBEB"/>
+  <!-- Roll top -->
+  <path d="M60 140 Q200 80 340 140" fill="#D97706"/>
+  <path d="M65 138 Q200 82 335 138" fill="#F59E0B"/>
+  <path d="M70 136 Q200 85 330 136" fill="#FBBF24"/>
+  <!-- Lettuce -->
+  <path d="M80 144 Q130 134 180 144 Q230 134 280 144 Q310 137 320 144" fill="#86EFAC"/>
+  <path d="M85 147 Q135 139 185 147 Q235 139 285 147" fill="#4ADE80"/>
+  <!-- Chicken cutlet (breaded, golden) -->
+  <ellipse cx="200" cy="155" rx="95" ry="18" fill="#D97706"/>
+  <ellipse cx="200" cy="153" rx="93" ry="16" fill="#F59E0B"/>
+  <!-- Breading texture dots -->
+  <circle cx="140" cy="153" r="2" fill="#FBBF24"/>
+  <circle cx="160" cy="150" r="2" fill="#FBBF24"/>
+  <circle cx="180" cy="155" r="2" fill="#FBBF24"/>
+  <circle cx="200" cy="151" r="2" fill="#FBBF24"/>
+  <circle cx="220" cy="154" r="2" fill="#FBBF24"/>
+  <circle cx="240" cy="150" r="2" fill="#FBBF24"/>
+  <circle cx="260" cy="153" r="2" fill="#FBBF24"/>
+  <!-- Tomato slices -->
+  <circle cx="155" cy="168" r="12" fill="#EF4444" opacity="0.8"/>
+  <circle cx="200" cy="168" r="12" fill="#EF4444" opacity="0.8"/>
+  <circle cx="245" cy="168" r="12" fill="#EF4444" opacity="0.8"/>
+  <!-- Mayo drizzle -->
+  <path d="M130 160 Q170 168 210 160 Q250 168 290 160" stroke="white" stroke-width="4" fill="none" opacity="0.7"/>
+  <!-- Bottom roll -->
+  <path d="M60 178 Q200 198 340 178" fill="#D97706"/>
+  <path d="M60 175 Q200 193 340 175" fill="#F59E0B"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="19" fill="#92400E" font-weight="700" text-anchor="middle">Chicken Cutlet Sandwich</text>
+</svg>

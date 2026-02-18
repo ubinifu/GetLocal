@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#FEF9C3"/>
+  <!-- Wrap halves showing cross-section -->
+  <ellipse cx="155" cy="155" rx="85" ry="68" fill="#FDE68A"/>
+  <ellipse cx="155" cy="155" rx="80" ry="63" fill="#FBBF24"/>
+  <ellipse cx="155" cy="155" rx="62" ry="50" fill="#FEF3C7"/>
+  <!-- Turkey -->
+  <ellipse cx="155" cy="140" rx="35" ry="10" fill="#FDE68A" opacity="0.8"/>
+  <!-- Bacon -->
+  <path d="M125 152 Q135 146 145 152 Q155 158 165 152 Q175 146 185 152" stroke="#DC2626" stroke-width="4" fill="none"/>
+  <!-- Lettuce -->
+  <path d="M120 162 Q140 155 160 162 Q180 155 190 162" fill="#4ADE80"/>
+  <!-- Tomato -->
+  <circle cx="145" cy="168" r="8" fill="#EF4444" opacity="0.8"/>
+  <circle cx="168" cy="166" r="8" fill="#EF4444" opacity="0.8"/>
+  <!-- Right half -->
+  <ellipse cx="265" cy="155" rx="85" ry="68" fill="#FDE68A"/>
+  <ellipse cx="265" cy="155" rx="80" ry="63" fill="#FBBF24"/>
+  <ellipse cx="265" cy="155" rx="62" ry="50" fill="#FEF3C7"/>
+  <ellipse cx="265" cy="140" rx="35" ry="10" fill="#FDE68A" opacity="0.8"/>
+  <path d="M235 152 Q245 146 255 152 Q265 158 275 152 Q285 146 295 152" stroke="#DC2626" stroke-width="4" fill="none"/>
+  <path d="M230 162 Q250 155 270 162 Q290 155 300 162" fill="#4ADE80"/>
+  <circle cx="255" cy="168" r="8" fill="#EF4444" opacity="0.8"/>
+  <!-- Mayo dots -->
+  <circle cx="155" cy="155" r="4" fill="white" opacity="0.6"/>
+  <circle cx="265" cy="155" r="4" fill="white" opacity="0.6"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="20" fill="#92400E" font-weight="700" text-anchor="middle">Turkey Club Wrap</text>
+</svg>
