@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 // Helpers
 // ---------------------------------------------------------------------------
 
-const SEED_PASSWORD = 'Password123';
+const SEED_PASSWORD = process.env.SEED_PASSWORD || 'Password123';
 const BCRYPT_ROUNDS = 12;
 
 async function hashPassword(password: string): Promise<string> {
@@ -109,8 +109,20 @@ async function main() {
     },
   });
 
+  const owner4 = await prisma.user.create({
+    data: {
+      email: 'amber@amberssubshop.com',
+      passwordHash,
+      firstName: 'Amber',
+      lastName: 'Owner',
+      phone: '+1-845-342-4814',
+      role: UserRole.STORE_OWNER,
+      isVerified: true,
+    },
+  });
+
   console.log(
-    `[Seed] Created store owners: ${owner1.email}, ${owner2.email}, ${owner3.email}`,
+    `[Seed] Created store owners: ${owner1.email}, ${owner2.email}, ${owner3.email}, ${owner4.email}`,
   );
 
   // ── Customer Users ──────────────────────────────────────────────────────
@@ -236,8 +248,38 @@ async function main() {
     },
   });
 
+  const store4 = await prisma.store.create({
+    data: {
+      ownerId: owner4.id,
+      name: "Amber's Sub Shop",
+      description:
+        'A beloved Middletown deli serving overstuffed sandwiches, breakfast favorites, and homemade salads with premium Boar\'s Head meats since day one.',
+      address: '125 W Main Street',
+      city: 'Middletown',
+      state: 'NY',
+      zipCode: '10940',
+      latitude: 41.4459,
+      longitude: -74.4225,
+      phone: '+1-845-342-4814',
+      email: 'info@amberssubshop.com',
+      isActive: true,
+      hours: {
+        monday: { open: '06:00', close: '19:00' },
+        tuesday: { open: '06:00', close: '19:00' },
+        wednesday: { open: '06:00', close: '19:00' },
+        thursday: { open: '06:00', close: '19:00' },
+        friday: { open: '06:00', close: '19:00' },
+        saturday: { open: '06:00', close: '19:00' },
+        sunday: { open: '06:00', close: '18:00' },
+      },
+      rating: 4.0,
+      reviewCount: 2,
+      defaultPrepTime: 10,
+    },
+  });
+
   console.log(
-    `[Seed] Created stores: ${store1.name}, ${store2.name}, ${store3.name}`,
+    `[Seed] Created stores: ${store1.name}, ${store2.name}, ${store3.name}, ${store4.name}`,
   );
 
   // ── Categories ──────────────────────────────────────────────────────────
@@ -277,8 +319,35 @@ async function main() {
       }),
     ]);
 
+  const [catBreakfast, catSubsHeroes, catWraps, catSalads] = await Promise.all([
+    prisma.category.create({
+      data: {
+        name: 'Breakfast',
+        description: 'Breakfast sandwiches, omelettes, and morning favorites',
+      },
+    }),
+    prisma.category.create({
+      data: {
+        name: 'Subs & Heroes',
+        description: 'Cold and hot submarine sandwiches and heroes',
+      },
+    }),
+    prisma.category.create({
+      data: {
+        name: 'Wraps',
+        description: 'Tortilla wraps with various fillings',
+      },
+    }),
+    prisma.category.create({
+      data: {
+        name: 'Salads',
+        description: 'Fresh salads and homemade salad platters',
+      },
+    }),
+  ]);
+
   console.log(
-    `[Seed] Created categories: ${catSnacks.name}, ${catBeverages.name}, ${catDairy.name}, ${catHousehold.name}, ${catProduce.name}`,
+    `[Seed] Created categories: ${catSnacks.name}, ${catBeverages.name}, ${catDairy.name}, ${catHousehold.name}, ${catProduce.name}, ${catBreakfast.name}, ${catSubsHeroes.name}, ${catWraps.name}, ${catSalads.name}`,
   );
 
   // ── Products ────────────────────────────────────────────────────────────
@@ -573,6 +642,226 @@ async function main() {
         isActive: true,
       },
     }),
+
+    // --- Store 4 - Amber's Sub Shop (indices 20-34) ---
+
+    // Breakfast items
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catBreakfast.id,
+        name: 'Bacon, Egg & Cheese',
+        description: 'Classic breakfast sandwich with crispy bacon, fresh egg, and melted American cheese on a roll',
+        price: 6.99,
+        sku: 'ASS-BRK-001',
+        barcode: '045678901001',
+        stockQuantity: 50,
+        lowStockThreshold: 10,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catBreakfast.id,
+        name: 'Cheese Steak Omelette',
+        description: 'Fluffy omelette loaded with cheese steak, peppers, onions, and melted cheese - a crowd favorite',
+        price: 10.99,
+        sku: 'ASS-BRK-002',
+        barcode: '045678901002',
+        stockQuantity: 30,
+        lowStockThreshold: 8,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catBreakfast.id,
+        name: 'Sausage, Egg & Cheese',
+        description: 'Savory sausage patty with egg and melted cheese on a fresh roll',
+        price: 6.99,
+        sku: 'ASS-BRK-003',
+        barcode: '045678901003',
+        stockQuantity: 45,
+        lowStockThreshold: 10,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catBreakfast.id,
+        name: 'Western Omelette',
+        description: 'Ham, peppers, onions, and cheese folded into a fluffy omelette',
+        price: 9.99,
+        sku: 'ASS-BRK-004',
+        barcode: '045678901004',
+        stockQuantity: 30,
+        lowStockThreshold: 8,
+        isActive: true,
+      },
+    }),
+
+    // Subs & Heroes
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catSubsHeroes.id,
+        name: 'Italian Combo Hero',
+        description: 'Boar\'s Head ham, salami, capicola, provolone, lettuce, tomato, onion, oil & vinegar on a fresh hero',
+        price: 13.99,
+        sku: 'ASS-SUB-001',
+        barcode: '045678901005',
+        stockQuantity: 40,
+        lowStockThreshold: 10,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catSubsHeroes.id,
+        name: 'Turkey & Roast Beef Hero',
+        description: 'Boar\'s Head ovengold turkey and roast beef with lettuce, tomato, and your choice of cheese',
+        price: 13.99,
+        sku: 'ASS-SUB-002',
+        barcode: '045678901006',
+        stockQuantity: 35,
+        lowStockThreshold: 8,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catSubsHeroes.id,
+        name: 'Chicken Cutlet Sandwich',
+        description: 'Crispy breaded chicken cutlet with lettuce, tomato, and mayo on a hero roll',
+        price: 12.99,
+        sku: 'ASS-SUB-003',
+        barcode: '045678901007',
+        stockQuantity: 40,
+        lowStockThreshold: 10,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catSubsHeroes.id,
+        name: 'Philly Cheese Steak',
+        description: 'Thinly sliced steak with sautéed peppers, onions, and melted cheese on a hoagie roll',
+        price: 13.99,
+        sku: 'ASS-SUB-004',
+        barcode: '045678901008',
+        stockQuantity: 35,
+        lowStockThreshold: 8,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catSubsHeroes.id,
+        name: 'Boar\'s Head Ham & Cheese',
+        description: 'Premium Boar\'s Head ham with your choice of cheese, lettuce, tomato on a fresh sub roll',
+        price: 12.49,
+        sku: 'ASS-SUB-005',
+        barcode: '045678901009',
+        stockQuantity: 40,
+        lowStockThreshold: 10,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catSubsHeroes.id,
+        name: 'Meatball Parm Hero',
+        description: 'Homemade meatballs smothered in marinara sauce with melted mozzarella on a toasted hero',
+        price: 12.99,
+        sku: 'ASS-SUB-006',
+        barcode: '045678901010',
+        stockQuantity: 30,
+        lowStockThreshold: 8,
+        isActive: true,
+      },
+    }),
+
+    // Wraps
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catWraps.id,
+        name: 'Chicken Caesar Wrap',
+        description: 'Grilled chicken, romaine lettuce, parmesan, and Caesar dressing in a flour tortilla',
+        price: 11.99,
+        sku: 'ASS-WRP-001',
+        barcode: '045678901011',
+        stockQuantity: 35,
+        lowStockThreshold: 8,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catWraps.id,
+        name: 'BBQ Rib Wrap',
+        description: 'Tender BBQ rib meat with coleslaw and pickles in a warm tortilla wrap',
+        price: 12.99,
+        sku: 'ASS-WRP-002',
+        barcode: '045678901012',
+        stockQuantity: 25,
+        lowStockThreshold: 6,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catWraps.id,
+        name: 'Turkey Club Wrap',
+        description: 'Boar\'s Head turkey, bacon, lettuce, tomato, and mayo in a flour tortilla',
+        price: 11.99,
+        sku: 'ASS-WRP-003',
+        barcode: '045678901013',
+        stockQuantity: 35,
+        lowStockThreshold: 8,
+        isActive: true,
+      },
+    }),
+
+    // Salads
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catSalads.id,
+        name: 'Homemade Chicken Salad',
+        description: 'Amber\'s famous homemade chicken salad on a bed of mixed greens with tomato and cucumber',
+        price: 10.99,
+        sku: 'ASS-SAL-001',
+        barcode: '045678901014',
+        stockQuantity: 20,
+        lowStockThreshold: 5,
+        isActive: true,
+      },
+    }),
+    prisma.product.create({
+      data: {
+        storeId: store4.id,
+        categoryId: catSalads.id,
+        name: 'Garden Salad',
+        description: 'Fresh mixed greens, tomatoes, cucumbers, red onion, and croutons with your choice of dressing',
+        price: 8.99,
+        sku: 'ASS-SAL-002',
+        barcode: '045678901015',
+        stockQuantity: 25,
+        lowStockThreshold: 6,
+        isActive: true,
+      },
+    }),
   ]);
 
   console.log(`[Seed] Created ${products.length} products`);
@@ -812,9 +1101,29 @@ async function main() {
           'The best produce in the neighborhood, hands down! Everything is so fresh and the organic options are amazing.',
       },
     }),
+
+    // Reviews for Amber's Sub Shop (2 reviews)
+    prisma.review.create({
+      data: {
+        customerId: customer1.id,
+        storeId: store4.id,
+        rating: 4,
+        comment:
+          'Excellent heroes! Overstuffed with Boar\'s Head meats. The Italian combo is worth every penny of that $14. Will definitely be back.',
+      },
+    }),
+    prisma.review.create({
+      data: {
+        customerId: customer2.id,
+        storeId: store4.id,
+        rating: 4,
+        comment:
+          'The cheese steak omelette is a must-try for breakfast. Huge portions and friendly service. Love this local gem!',
+      },
+    }),
   ]);
 
-  console.log('[Seed] Created 6 reviews');
+  console.log('[Seed] Created 8 reviews');
 
   // ── Notifications ───────────────────────────────────────────────────────
   console.log('[Seed] Creating sample notifications...');
@@ -870,15 +1179,15 @@ async function main() {
   console.log('\n[Seed] Database seeded successfully!');
   console.log('[Seed] Summary:');
   console.log('  - 2 admin users');
-  console.log('  - 3 store owners');
+  console.log('  - 4 store owners');
   console.log('  - 3 customers');
-  console.log('  - 3 stores');
-  console.log('  - 5 categories');
+  console.log('  - 4 stores (incl. Amber\'s Sub Shop, Middletown NY)');
+  console.log('  - 9 categories');
   console.log(`  - ${products.length} products`);
   console.log('  - 5 orders (with order items)');
-  console.log('  - 6 reviews');
+  console.log('  - 8 reviews');
   console.log('  - 4 notifications');
-  console.log('\n[Seed] All seed passwords: "Password123"');
+  console.log(`\n[Seed] All seed passwords: "${SEED_PASSWORD}"`);
 }
 
 // ---------------------------------------------------------------------------
